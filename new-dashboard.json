@@ -27,7 +27,6 @@
       }
     ],
     "cursorSync": "Off",
-    "description": "",
     "editable": true,
     "elements": {
       "panel-1": {
@@ -36,21 +35,7 @@
           "data": {
             "kind": "QueryGroup",
             "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "group": "",
-                      "kind": "DataQuery",
-                      "spec": {},
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
+              "queries": [],
               "queryOptions": {},
               "transformations": []
             }
@@ -60,14 +45,22 @@
           "links": [],
           "title": "New panel",
           "vizConfig": {
-            "group": "__unconfigured-panel",
+            "group": "text",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {},
                 "overrides": []
               },
-              "options": {}
+              "options": {
+                "code": {
+                  "language": "plaintext",
+                  "showLineNumbers": false,
+                  "showMiniMap": false
+                },
+                "content": "# Grafana - Github Synced Dashboard\n\nFor markdown syntax help: [commonmark.org/help](https://commonmark.org/help/)",
+                "mode": "markdown"
+              }
             },
             "version": "13.3.0-36978054224"
           }
@@ -128,7 +121,7 @@
       "timezone": "browser",
       "to": "now"
     },
-    "title": "New dashboard",
+    "title": "Synced Dashboard",
     "variables": []
   }
 }
